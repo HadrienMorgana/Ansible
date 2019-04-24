@@ -1,0 +1,14 @@
+- name: Install apache2
+  apt:
+  	name: apache2
+  	update_cache: yes
+  remote_user: hadrien
+  become: true
+
+
+- name: Install PHP 
+  apt:
+  	name: php7.2
+  	update_cache: yes
+  remote_user: hadrien
+  become: true

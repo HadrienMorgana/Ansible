@@ -1,0 +1,6 @@
+- name: download WordPress
+  unarchive:
+    src: "{{wordpress_source}}"
+    dest: "/var/www/html"
+    remote_src: yes
+  become: true

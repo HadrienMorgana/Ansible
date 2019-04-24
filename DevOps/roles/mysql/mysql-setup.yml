@@ -1,0 +1,7 @@
+- name: Install MySQL
+  apt:
+  	name: mysql-server
+  	update_cache: yes
+  remote_user: hadrien
+  become: true
+
